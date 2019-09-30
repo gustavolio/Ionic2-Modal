@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, ModalController } from 'ionic-angular';
+import { LoginPage } from '../login/login';
 
 @Component({
   selector: 'page-home',
@@ -19,7 +20,7 @@ export class HomePage {
   }
 
   logIn(){
-    let profileModal = this.modalCtrl.create("LoginPage", {}, { enableBackdropDismiss: false });
+    let profileModal = this.modalCtrl.create(LoginPage);
     profileModal.present();
 
     profileModal.onDidDismiss(data => {

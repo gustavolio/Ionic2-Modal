@@ -19,7 +19,7 @@ export class HomePage {
   }
 
   logIn(){
-    let profileModal = this.modalCtrl.create("LoginPage", {}, { enableBackdropDismiss: false });
+    let profileModal = this.modalCtrl.create("LoginPage");
     profileModal.present();
 
     profileModal.onDidDismiss(data => {

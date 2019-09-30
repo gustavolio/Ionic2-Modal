@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController, ModalController } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
+import { LoginPage } from '../login/login';
 
 @Component({
   selector: 'page-home',
@@ -7,7 +8,7 @@ import { NavController, ModalController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
+  constructor(public navCtrl: NavController) {
   }
 
   pushPage(){
@@ -19,11 +20,9 @@ export class HomePage {
   }
 
   logIn(){
-    let profileModal = this.modalCtrl.create("LoginPage", {}, { enableBackdropDismiss: false });
-    profileModal.present();
+    let profileModal = this.navCtrl.push("LoginPage");
 
     profileModal.onDidDismiss(data => {
-      console.log('Tentou abrir o login');
       console.log(data);
     });
   }

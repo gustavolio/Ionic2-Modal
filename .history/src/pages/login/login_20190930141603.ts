@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the SobrePage page.
+ * Generated class for the LoginPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,20 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-sobre',
-  templateUrl: 'sobre.html',
+  selector: 'page-login',
+  templateUrl: 'login.html',
 })
-export class SobrePage {
-  
+export class LoginPage {
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    let id = navParams.get('id');
-    let name = navParams.get('name');
-    console.log(id);
-    console.log(name);
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SobrePage');
+    console.log('ionViewDidLoad LoginPage');
   }
 
 }

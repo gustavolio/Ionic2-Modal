@@ -14,12 +14,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'sobre.html',
 })
 export class SobrePage {
-  
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    let id = navParams.get('id');
-    let name = navParams.get('name');
-    console.log(id);
-    console.log(name);
   }
 
   ionViewDidLoad() {

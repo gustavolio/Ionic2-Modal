@@ -11,6 +11,5 @@
   <p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
   </p>
-  <button ion-button (click)='pushPage()'>Sobre</button>
-  <button ion-button (click)='logIn()'>Login</button>
+  <button ion-button [navPush]="sobrePage">Sobre</button>
 </ion-content>
